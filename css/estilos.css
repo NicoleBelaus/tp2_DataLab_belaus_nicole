@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+body{
+background-color: #efefef;
+font-family: "Space Grotesk", sans-serif;
+font-weight:400;
+font-size: 20;
+text-align: center;
+
+}
+
+
+
+h1{
+text-align: center;
+color:#303030;
+font-weight:800;
+font-family: "Lexend Deca", sans-serif;
+font-size:50px;
+}
+
+h2{
+text-align: center;
+color:#303030;
+font-weight:800;
+font-family: "Lexend Deca", sans-serif;
+font-size:35px;
+}
+
+h3{
+    background-color: #efefef;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight:400;
+    font-size: 20;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+
+    }
+
+a{
+text-decoration:none;
+color:#303030;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 0; 
+}
+
+ul li {
+    margin-top: 20px;
+    margin: 5px 0; 
+    text-align: center; 
+    line-height: 0.7; 
+}
+
+#vinculo{
+color:#efefef;
+background-color: #303030;
+width:110px;
+height:30px;
+display: block;
+padding: 5px 5px;
+text-align: center;
+border-radius: 7px;
+transition-property:border-radius, background-color;
+transition-duration: 0.3s, 0.3s;
+margin-top: 20px;
+margin: 10px auto;
+
+
+}
+
+#vinculo:hover{
+border-radius: 16px;
+background-color: #0000f6;
+
+}
+
+
+
+img,video {width: 100%;} 
+
+main {
+    padding: 0 8.33vw;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    
+}
+
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+
+.fotos img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.fotos div {
+    width: 47%;
+    margin-bottom: 30px;
+ 
+}
+
+footer{
+    width: 2000px;
+    height: 80px;
+    padding: 10px;
+    display: block;
+    align-content: center;
+    background-image: url(../imagenes/footer.jpg) ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color:#efefef;
+
+}
+
+#contenedorEstrella {
+    margin-top: 90px;
+    width: 100px; /* Tamaño deseado para la estrella */
+    height: 100px; /* Tamaño deseado para la estrella */
+    margin: 0 auto; /* Centrar horizontalmente */
+    position: relative; /* Para facilitar el posicionamiento de la imagen */
+}
+
+#rotacionestrella {
+    width: 100%; /* Ocupar todo el espacio del contenedor */
+    height: auto; /* Mantener la proporción */
+}
+
+@keyframes rotarEstrella {
+    0% {
+        transform: rotate(0deg); 
+    }
+    100% {
+        transform: rotate(360deg); 
+    }
+}
+
+#rotacionestrella {
+    animation-name: rotarEstrella;
+    animation-duration: 5s;
+    animation-timing-function: linear; /* Función de temporización lineal para rotación constante */
+    animation-iteration-count: infinite;
+}
